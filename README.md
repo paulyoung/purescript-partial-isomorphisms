@@ -1,5 +1,7 @@
 # purescript-partial-isomorphisms
 
+[![Build Status](https://travis-ci.com/paulyoung/purescript-partial-isomorphisms.svg?branch=master)](https://travis-ci.com/paulyoung/purescript-partial-isomorphisms)
+
 A PureScript implementation of partial isomorphisms, from the paper [Invertible Syntax Descriptions: Unifying Parsing and Pretty Printing (Rendel and Ostermann 2010)](http://www.informatik.uni-marburg.de/~rendel/unparse/rendel10invertible.pdf).
 
 ## Licensing
