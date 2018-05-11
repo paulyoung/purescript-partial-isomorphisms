@@ -37,10 +37,10 @@ associate = Iso f g
 
 -- | Products commute.
 commute :: forall a b. Iso (Tuple a b) (Tuple b a)
-commute = Iso f g
+commute = Iso f f
   where
+  f :: forall a' b'. Tuple a' b' -> Maybe (Tuple b' a')
   f (Tuple a b) = Just (Tuple b a)
-  g (Tuple b a) = Just (Tuple a b)
 
 -- | `Data.Unit.unit` is the unit element for products.
 unit :: forall a. Iso a (Tuple a Unit)
